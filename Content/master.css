@@ -1,0 +1,30 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  background-color: #3a7591;
+}
+h1,
+p,
+a {
+  font-family: 'Droid Serif', serif;
+  color: #c0daf4;
+  text-align: center;
+}
+#content {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#info {
+  width: 40%;
+}
+#name {
+  width: 100%;
+}
+#about {
+  width: 100%;
+}
