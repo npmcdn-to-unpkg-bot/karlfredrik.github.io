@@ -78,14 +78,14 @@
             <article>
             
                 <div>
-                    <p>I det här inlägget tänkte jag ge lite tips och tricks över saker jag lärt mig i Analytics.</p>
+                    <p>I det här inlägget tänkte jag ge lite tips och tricks över saker jag lärt mig i Analytics. Jag kommer att gå igenom referrer-spam, bots, varningar och nudda lite vid filter.</p>
 <h4>Filtrera ut spam</h4>
 <p>Ett stort problem i Analytics är spam-trafik. De använder sig av en lösning Google erbjuder vid namn &quot;Google measurement protocol&quot;, som de skickar spam till slumpmässiga tracking-idn. På så sätt behöver de inte ens besöka sidan i fråga. Sättet det fungerar på är att de sätter en spam-url som hänvisare ( referrer ) till sidvisningarna, som sedan dyker upp i Analytics.</p>
-<p>Det finns dock en enkel lösning till denna typen av spam, då de skickar det till slumpmässiga IDn så vet de oftast inte vilken domän koden är associerad med. Om man skapar ett filter på att bara spåra besökare från specifika domäner så löser man problemet. För att göra det gå logga in i Analytics, gå till Administratör-Filter och lägga till ett nytt filter. Ge filtret ett namn och välj typ &quot;Fördefinerat&quot;, &quot;Inkludera endast&quot;, &quot;trafik till värdnamn&quot;, &quot;Som är lika med&quot; och skriv sedan ditt värdnamn. Till exempel example.com eller www.example.com.</p>
+<p>Det finns dock en enkel lösning till denna typen av spam, då de skickar det till slumpmässiga IDn så vet de oftast inte vilken domän koden är associerad med. Om man skapar ett filter på att bara spåra besökare från specifika domäner så löser man problemet. För att göra det gå logga in i Analytics, gå till Administratör-Filter och lägga till ett nytt filter. Ge filtret ett namn och välj typ &quot;Fördefinierat&quot;, &quot;Inkludera endast&quot;, &quot;trafik till värdnamn&quot;, &quot;Som är lika med&quot; och skriv sedan ditt värdnamn. Till exempel example.com eller www.example.com.</p>
 <p><img src="/Content/images/blog/hostname_filter.png" alt="Hostname filter" title="Inkludera enbart värdnamn" /></p>
 <p>Du kan lägga till flera värdnamn genom att skapa ett anpassat filter. Se följande bild som exempel</p>
 <p><img src="/Content/images/blog/custom_filter.png" alt="Custom filter" title="Skapa anpassat filter" /></p>
-<p>Under filtreringsmönster kan man skriva ett så kallat &quot;RegEx&quot; eller &quot;Regulära uttryck&quot;. Mer information finns att hitta på följande länk:</p>
+<p>Under filtreringsmönster kan man skriva ett så kallat &quot;RegEx&quot; eller &quot;Reguljära uttryck&quot;. Mer information finns att hitta på följande länk:</p>
 <p><a href="https://support.google.com/analytics/answer/1034324?hl=sv">Regulära uttryck</a></p>
 <p>Ett exempel på RegEx för flera domäner är följande:</p>
 <pre><code>example1\.com|example2\.com
@@ -101,9 +101,9 @@
 <p>Under &quot;inställningar för vy&quot; så finns en inställning för att ta bort träffar från kända botar och spindlar, den är inte ikryssad som standard och kan vara en bra idé att ha igång.</p>
 <p><img src="/Content/images/blog/exclude_bots.png" alt="Exclude bots" title="Exkludera spindlar och botar" /></p>
 <h4>Anpassade varningar</h4>
-<p>Ett bra sätt att få till grundläggande övervakning på din site är att lägga till en varning. Du har möjlighet att sätta period på dag, vecka eller månad. Där finns möjlighet att få ett mail skickat om det inte har kommit in någon trafik inom ett visst tidsspan. Det kan t.ex. bero på att siten har varit nere, eller att koden som inkluderas för Analytics på något sätt gått sönder. Detta bör dock inte ersätta riktig övervakning, jag har själv erfarenhet av <a href="https://www.pingdom.com">Pingdom</a> vilken har betydligt kraftfullare övervakningsalternativ.</p>
+<p>Ett bra sätt att få till grundläggande övervakning på din site är att lägga till en varning. Du har möjlighet att sätta period på dag, vecka eller månad. Där finns möjlighet att få ett e-post skickat om det inte har kommit in någon trafik inom ett visst tidsspann. Det kan t.ex. bero på att siten har varit nere, eller att koden som inkluderas för Analytics på något sätt gått sönder. Detta bör dock inte ersätta riktig övervakning, jag har själv erfarenhet av <a href="https://www.pingdom.com">Pingdom</a> vilken har betydligt kraftfullare övervakningsalternativ.</p>
 <p><img src="/Content/images/blog/create_alert.png" alt="Alert" title="Skapa en anpassad varning" /></p>
-<p>I Analytics finns även möjlighet att få en varning om ett kriterie ändras med ett visst antal procent, vilket kan hjälpa en att vara mer proaktiv när till exempel förändringar på sidan skapar problem hos användarna.</p>
+<p>I Analytics finns även möjlighet att få en varning om ett valt alternativ ändras med ett visst antal procent, vilket kan hjälpa en att vara mer proaktiv när till exempel förändringar på sidan skapar problem hos användarna.</p>
 <p>Det var allt jag hade för denna gången, jag hoppas kunna få upp ett nytt inlägg snart som går in mer på målvärde och events, och tips på hur man kan tänka för att mäta värdet av sin webb.</p>
 
 

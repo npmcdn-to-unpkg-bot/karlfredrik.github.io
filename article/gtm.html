@@ -78,12 +78,12 @@
             <article>
             
                 <div>
-                    <p>Google Tag manager ( ofta förkortat till GTM )  är en teknologi från Google vilket möjliggör publicering av  javascript/HTML-kod på en hemsida direkt ifrån Googles användargränssnitt.</p>
-<p>Google erbjuder en rad förkonfigurerade typer av taggar, så som Analytics, Google Adwords och Linkedin. Du har även möjlighet att skapa dina egna taggar, där du kan skriva in egen HTMl eller Javascript-kod.</p>
+                    <p>Google Tag manager ( ofta förkortat till GTM )  är en teknologi från Google vilket möjliggör publicering av  javascript/HTML-kod på en hemsida direkt ifrån Googles användargränssnitt. Det ger möjlighet till att själv kunna lägga in script på hemsidan utan att behöva blanda in en utvecklare.</p>
+<p>Google erbjuder en rad förkonfigurerade typer av taggar, så som Analytics, Google Adwords och Linkedin. Du har även möjlighet att skapa dina egna taggar, där du kan skriva in egen HTML eller Javascript-kod.</p>
 <p>Du har stora möjligheter att välja när den här koden ska köras, till exempel att den ska köras på varje sidvisning,  varje gång ett formulär skickas in eller varje gång en användare klickar på en länk. Om du kan Javascript ( JS ) kan du även skicka in egna event genom Datalayer.</p>
 <h3>Datalayer</h3>
 <p>Datalayer är ett JS objekt med information som skickas till GTM. Den kan innehålla olika event och variabler. De kan sedan användas för att trigga en händelse i GTM.</p>
-<p>Ett exempel på detta är hur jag har gjort för att koppla Analytics till Tag Manager. Jag binder den här koden på när någon klickar på min mail-address.</p>
+<p>Ett exempel på detta är hur jag har gjort för att koppla Analytics till Tag Manager. Jag binder den här koden på när någon klickar på min e-post.</p>
 <pre><code class="language-javascript">dataLayer.push({
 	'event': 'gaEvent',
 	'eventCategory': &quot;Mail&quot;,

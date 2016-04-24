@@ -48,11 +48,18 @@
 .whitebox a {
   color: #337ab7;
 }
+.post-preview h4,
+#blog h4,
+.whitebox h4 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
 .grid {
   margin-left: -15px;
 }
 .grid .grid-item {
   width: 47.5%;
+  margin-bottom: 20px;
 }
 #blog img {
   max-width: 100%;
