@@ -1,30 +1,114 @@
+.shadow {
+  -webkit-box-shadow: 1px 0px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 1px 0px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 1px 0px 5px 0px rgba(50, 50, 50, 0.75);
+}
+.shadow-top {
+  -webkit-box-shadow: inset 0px 3px 8px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: inset 0px 3px 8px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: inset 0px 3px 8px -4px rgba(0, 0, 0, 0.75);
+}
+.full-height {
+  height: 100%;
+}
+.full-height .row,
+.full-height #content {
+  height: 75%;
+}
+.flex {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 html,
 body {
   height: 100%;
 }
+a[href^="mailto:"] {
+  text-decoration: inherit;
+}
 body {
   background-color: #3a7591;
 }
+#info h1,
+#info p,
+#info a {
+  text-align: center;
+}
 h1,
+h2,
+h3,
+h4,
+h5,
 p,
 a {
-  font-family: 'Droid Serif', serif;
-  color: #c0daf4;
-  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  color: #e3f1ff;
 }
 #content {
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+}
+#content > .row {
+  height: 100%;
 }
 #info {
-  width: 40%;
+  height: 75%;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
-#name {
+.flexcontainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.flexcontainer .header {
+  display: flex;
   width: 100%;
 }
-#about {
-  width: 100%;
+.flexcontainer .header svg {
+  margin-right: 1em;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  width: 50px;
+  height: 50px;
+  fill: #0f1119;
+}
+.navbar {
+  z-index: 1;
+  background-color: #0f1119;
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+  -webkit-box-shadow: 1px 0px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 1px 0px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 1px 0px 5px 0px rgba(50, 50, 50, 0.75);
+}
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-brand {
+  color: #f5ffff;
+}
+.about .details h3 {
+  margin-left: 15px;
+  width: 95%;
+  border-bottom: 1px solid #0f1119;
+  font-weight: 600;
+}
+.about .details h4 {
+  font-weight: 500;
+}
+.about .details p {
+  font-size: 12px;
 }

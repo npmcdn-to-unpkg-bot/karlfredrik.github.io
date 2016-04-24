@@ -1,0 +1,85 @@
+.shadow-top {
+  -webkit-box-shadow: inset 0px 3px 8px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: inset 0px 3px 8px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: inset 0px 3px 8px -4px rgba(0, 0, 0, 0.75);
+}
+.flex {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+}
+.post-preview,
+#blog,
+.whitebox {
+  background-color: #f5ffff;
+  padding: 10px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  -webkit-box-shadow: 1px 0px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 1px 0px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 1px 0px 5px 0px rgba(50, 50, 50, 0.75);
+}
+.post-preview h1,
+#blog h1,
+.whitebox h1,
+.post-preview h2,
+#blog h2,
+.whitebox h2,
+.post-preview h3,
+#blog h3,
+.whitebox h3,
+.post-preview h4,
+#blog h4,
+.whitebox h4,
+.post-preview h5,
+#blog h5,
+.whitebox h5,
+.post-preview p,
+#blog p,
+.whitebox p {
+  color: #0f1119;
+}
+.post-preview a,
+#blog a,
+.whitebox a {
+  color: #337ab7;
+}
+.grid {
+  margin-left: -15px;
+}
+.grid .grid-item {
+  width: 47.5%;
+}
+#blog img {
+  max-width: 100%;
+  padding: 10px;
+}
+#sidebar h3 {
+  margin-top: 4px;
+}
+#sidebar #author {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+}
+#sidebar p,
+#sidebar a {
+  font-size: 12px;
+}
+#tags a {
+  display: block;
+  clear: both;
+}
+@media (max-width: 768px) {
+  .grid .grid-item {
+    width: 90%;
+  }
+}
