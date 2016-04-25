@@ -54,11 +54,8 @@
   margin-top: 15px;
   margin-bottom: 15px;
 }
-.grid {
-  margin-left: -15px;
-}
 .grid .grid-item {
-  width: 47.5%;
+  width: 49%;
   margin-bottom: 40px;
 }
 #blog img {
@@ -84,6 +81,13 @@
 #tags a {
   display: block;
   clear: both;
+}
+.postlisting {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.blog-detail {
+  padding-right: 0;
 }
 @media (max-width: 768px) {
   .grid .grid-item {
