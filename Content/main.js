@@ -31,3 +31,9 @@ jQuery('img.svg').each(function(){
     }, 'xml');
 
 });
+
+var msnry = new Masonry( '.grid', {
+  
+  gutter: 18.5,
+  itemSelector: '.grid-item'
+});
