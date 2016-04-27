@@ -32,6 +32,7 @@ jQuery('img.svg').each(function(){
 
 });
 
+
 var msnry = new Masonry( '.grid', {
   
   gutter: 19,
