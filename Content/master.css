@@ -8,8 +8,21 @@
   -moz-box-shadow: inset 0px 3px 8px -4px rgba(0, 0, 0, 0.75);
   box-shadow: inset 0px 3px 8px -4px rgba(0, 0, 0, 0.75);
 }
+html,
+body {
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
 .full-height {
-  height: 100%;
+  background-image: url("/Content/images/noise5.png");
+  top: 50px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  width: auto;
+  height: auto;
 }
 .full-height .row,
 .full-height #content {
@@ -25,15 +38,19 @@
   justify-content: center;
   flex-direction: column;
 }
-html,
-body {
-  height: 100%;
-}
 a[href^="mailto:"] {
   text-decoration: inherit;
 }
 body {
   background-color: #3a7591;
+  background: #3a7591;
+  background: -moz-linear-gradient(-45deg, #3a7591 0%, #204a5c 100%);
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, #3a7591), color-stop(100%, #204a5c));
+  background: -webkit-linear-gradient(-45deg, #3a7591 0%, #204a5c 100%);
+  background: -o-linear-gradient(-45deg, #3a7591 0%, #204a5c 100%);
+  background: -ms-linear-gradient(-45deg, #3a7591 0%, #204a5c 100%);
+  background: linear-gradient(135deg, #3a7591 0%, #204a5c 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3a7591', endColorstr='#204a5c', GradientType=1);
 }
 #info h1,
 #info p,

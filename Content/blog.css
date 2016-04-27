@@ -89,7 +89,15 @@
 .blog-detail {
   padding-right: 0;
 }
+@media (max-width: 1786px) {
+  .grid .grid-item {
+    width: 45%;
+  }
+}
 @media (max-width: 768px) {
+  body {
+    background: #3a7591;
+  }
   .grid .grid-item {
     width: 90%;
   }
