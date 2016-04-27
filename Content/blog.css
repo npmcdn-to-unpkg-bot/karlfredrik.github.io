@@ -98,7 +98,10 @@
   body {
     background: #3a7591;
   }
+  .blog-article {
+    max-width: 95%;
+  }
   .grid .grid-item {
-    width: 90%;
+    width: 95%;
   }
 }
