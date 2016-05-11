@@ -55,8 +55,11 @@
   margin-bottom: 15px;
 }
 .grid .grid-item {
-  width: 49%;
+  width: 99%;
   margin-bottom: 40px;
+}
+.grid .grid-item:not(:last-child) {
+  border-bottom: 1px solid #0f1119;
 }
 #blog img {
   max-width: 100%;
@@ -83,16 +86,14 @@
   clear: both;
 }
 .postlisting {
-  padding-left: 0px;
-  padding-right: 0px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .blog-detail {
   padding-right: 0;
 }
-@media (max-width: 1786px) {
-  .grid .grid-item {
-    width: 45%;
-  }
+.blog-header {
+  border-bottom: 1px solid #0f1119;
 }
 @media (max-width: 768px) {
   body {
