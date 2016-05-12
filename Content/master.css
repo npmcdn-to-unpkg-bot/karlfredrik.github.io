@@ -1,3 +1,29 @@
+.double-border:after {
+  background: none;
+  border-bottom: 3px double #bbbbbb;
+  content: "";
+  width: 100%;
+  position: absolute;
+  bottom: 1px;
+  left: 0;
+  pointer-events: none;
+}
+.flexcontainer {
+  display: flex;
+  flex-flow: row wrap;
+}
+.flexcontainer .header {
+  display: flex;
+  width: 100%;
+}
+.flexcontainer .header svg {
+  margin-right: 1em;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  width: 50px;
+  height: 50px;
+  fill: #0f1119;
+}
 .shadow {
   -webkit-box-shadow: 1px 0px 5px 0px rgba(50, 50, 50, 0.75);
   -moz-box-shadow: 1px 0px 5px 0px rgba(50, 50, 50, 0.75);
@@ -24,9 +50,11 @@ body {
   width: auto;
   height: auto;
 }
-.full-height .row,
-.full-height #content {
+.full-height .row {
   height: 75%;
+}
+.full-height #content {
+  height: 100%;
 }
 .flex {
   display: -webkit-box;
@@ -52,31 +80,12 @@ body {
   background: linear-gradient(135deg, #3a7591 0%, #204a5c 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3a7591', endColorstr='#204a5c', GradientType=1);
 }
-#info h1,
-#info p,
-#info a {
-  text-align: center;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-p,
-a {
-  font-family: 'Open Sans', sans-serif;
-  color: #e3f1ff;
-}
-#content {
-  height: 100%;
-}
-#content > .row {
-  height: 100%;
-}
 #info {
   height: 75%;
   padding: 0;
   margin: 0;
+  position: relative;
+  padding-bottom: 10em;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -86,22 +95,29 @@ a {
   justify-content: center;
   flex-direction: column;
 }
-.flexcontainer {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
+#info h1,
+#info p,
+#info a {
+  text-align: center;
 }
-.flexcontainer .header {
-  display: flex;
-  width: 100%;
+p,
+a {
+  font-family: 'Open Sans', sans-serif;
+  color: #e3f1ff;
 }
-.flexcontainer .header svg {
-  margin-right: 1em;
-  margin-top: 25px;
-  margin-bottom: 10px;
-  width: 50px;
-  height: 50px;
-  fill: #0f1119;
+h1,
+h2,
+h3,
+h4,
+h5,
+.navbar a {
+  font-family: 'Titillium Web', sans-serif;
+}
+#content {
+  height: 100%;
+}
+#content > .row {
+  height: 100%;
 }
 .navbar {
   z-index: 1;
@@ -131,4 +147,12 @@ a {
 }
 .about .details p {
   font-size: 12px;
+}
+@media screen and (max-height: 340px) {
+  .full-height .row {
+    height: 100%;
+  }
+  #info {
+    padding-bottom: 0em;
+  }
 }

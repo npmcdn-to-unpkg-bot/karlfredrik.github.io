@@ -59,7 +59,7 @@
   margin-bottom: 40px;
 }
 .grid .grid-item:not(:last-child) {
-  border-bottom: 1px solid #0f1119;
+  border-bottom: 3px double #dddddd;
 }
 #blog img {
   max-width: 100%;
@@ -93,7 +93,10 @@
   padding-right: 0;
 }
 .blog-header {
-  border-bottom: 1px solid #0f1119;
+  border-bottom: 3px double #dddddd;
+}
+h3 {
+  line-height: 1em;
 }
 @media (max-width: 768px) {
   body {

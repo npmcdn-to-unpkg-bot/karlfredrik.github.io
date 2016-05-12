@@ -12,8 +12,12 @@
         <link href="/Content/master.css" rel="stylesheet" />
         <link href="/Content/blog.css" rel="stylesheet" />
         <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+       <link href='https://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
        
-       <!-- Google Tag Manager -->
+    </head>
+
+    <body> 
+        <!-- Google Tag Manager -->
         <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PSJV62" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -21,9 +25,6 @@
         '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
         })(window,document,'script','dataLayer','GTM-PSJV62');</script>
         <!-- End Google Tag Manager -->
-    </head>
-
-    <body> 
         
         <nav class="navbar navbar-default">
     <div class="container-fluid">
@@ -68,7 +69,7 @@
                 <div class="post-heading">
                     <h1>Tips f&#246;r Google Analytics</h1>
                     
-                    <span class="meta">Publiserad 2016-04-5</span>
+                    <span class="meta">Publicerad 2016-04-5</span>
                 </div>
         
             </header>
@@ -77,7 +78,7 @@
             <article>
             
                 <div>
-                    <p>I det här inlägget tänkte jag ge lite tips och tricks över saker jag lärt mig i Analytics. Jag kommer att gå igenom referrer-spam, bots, varningar och nudda lite vid filter.</p>
+                    <p>I det här inlägget tänkte jag ge lite tips och tricks över saker jag lärt mig i Analytics. Jag kommer att gå igenom referrer-spam, bots, varningar och en liten smula filter.</p>
 <h4>Filtrera ut spam</h4>
 <p>Ett stort problem i Analytics är spam-trafik. De använder sig av en lösning Google erbjuder vid namn &quot;Google measurement protocol&quot;, som de skickar spam till slumpmässiga tracking-idn. På så sätt behöver de inte ens besöka sidan i fråga. Sättet det fungerar på är att de sätter en spam-url som hänvisare ( referrer ) till sidvisningarna, som sedan dyker upp i Analytics.</p>
 <p>Det finns dock en enkel lösning till denna typen av spam, då de skickar det till slumpmässiga IDn så vet de oftast inte vilken domän koden är associerad med. Om man skapar ett filter på att bara spåra besökare från specifika domäner så löser man problemet. För att göra det gå logga in i Analytics, gå till Administratör-Filter och lägga till ett nytt filter. Ge filtret ett namn och välj typ &quot;Fördefinierat&quot;, &quot;Inkludera endast&quot;, &quot;trafik till värdnamn&quot;, &quot;Som är lika med&quot; och skriv sedan ditt värdnamn. Till exempel example.com eller www.example.com.</p>
@@ -158,6 +159,7 @@
         <script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.min.js"></script>    
          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
          <script src="/Content/main.js"></script>
+         
          
          <script> 
             var $buoop = {vs:{i:10,f:25,o:12.1,s:7},c:2}; 
